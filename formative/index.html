@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for icons -->
+    <script src="https://kit.fontawesome.com/5c0a415d61.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <div id="header">
+        <div class="container">
+            <!-- Navigation Bar -->
+            <nav>
+                <!-- Logo -->
+                <img src="Design Logo.png" alt="Logo" class="logo">
+                <!-- Side Menu for Mobile -->
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li><br>
+                    <li><a href="#about">About</a></li><br>
+                    <li><a href="#services">Services</a></li><br>
+                    <li><a href="#portfolio">Portfolio</a></li><br>
+                    <li><a href="#contact">Contact</a></li><br>
+                    <!-- Close Menu Icon (Mobile) -->
+                       <i class="fa-solid fa-xmark" onclick="closemenu()"> </i>
+                </ul>
+                
+                <!-- Open Menu Icon (Mobile) -->
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <br>
+            <!-- Header Text and Image -->
+            <div class="header-text">
+                <div class="text-content">
+                    <p>Hello You</p>
+                    <p>I am a passionate and results-oriented <span>Front-end</span> <br> and <span>Visual Assistant</span> 
+                        with a strong foundation in HTML, CSS, and JavaScript.
+                        I possess a keen eye for design and a meticulous approach 
+                        to crafting user-friendly and visually appealing web experiences.</p>
+                </div>
+                <!-- Header Image -->
+                <div class="image-content">
+                    <img src="66.jpg" alt="Profile Image">
+                </div>
+            </div>
+        </div>  
+    </div>
+
+    <!-- About Section -->
+    <div id="about">
+        <div id="container">
+            <div id="row">
+                <!-- About Image -->
+                <div class="about-col-1">
+                    <img src="77.jpg" alt="About Image">
+                </div>
+                <!-- About Text and Tabs -->
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm a front-end developer and visual assistant passionate about crafting engaging 
+                        and user-friendly web experiences. I blend technical skills in HTML, CSS, 
+                        and JavaScript with a keen eye for design. 
+                        I excel at creating visually appealing interfaces and transforming ideas into interactive realities.
+                        I'm eager to collaborate and build innovative digital solutions.</p>
+                    <!-- Tabs for Education and Skills -->
+                    <div class="tab-titles">
+                        <p class="btn btn2" onclick="opentab('education')"><i class="fa-solid fa-user-graduate"></i>Education</p>
+                        <p class="btn btn2" onclick="opentab('skills')"><i class="fa-solid fa-book"></i>Skills</p>
+                    </div>
+                    <!-- Education Tab Content -->
+                    <div class="tab-contents active-tab" id="education">
+                        <ul>
+                            <li><span>Visual Assistant<br></span>ALX 8 week Trainings</li>
+                            <li><span>Frontend<br></span>At African Leadership University</li>
+                            <li><span>Data Entry<br></span>Using MySQL at African Leadership University</li>
+                        </ul>
+                    </div>
+                    <!-- Skills Tab Content -->
+                    <div class="tab-contents" id="skills">
+                        <ul>
+                            <li><span>ALX Trainings<br></span>Professional Visual Assistant for 8 Weeks</li>
+                            <li><span>Front End<br></span>Frontend Web Development</li>
+                            <li><span>Administrative Tasks<br></span>Completed Training in This Field</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+
+    <!-- Services Section -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <!-- Web Design Service -->
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>I create websites that adapt seamlessly to any device, from desktops to smartphones,
+                        ensuring a consistent user experience across all platforms.</p>
+                    <a href="1.html" target="_blank">Learn More</a>
+                </div>
+                <!-- Visual Assistants Service -->
+                <div>
+                    <i class="fa-solid fa-list-check"></i>
+                    <h2>Visual Assistants</h2>
+                    <p>I design visually compelling presentations that capture your audience's 
+                        attention and help you deliver your message with impact.</p>
+                    <a href="2.html" target="_blank">Learn More</a>
+                </div>
+                <!-- All-in-One Service -->
+                <div>
+                    <h2>All in All</h2>
+                    <i class="fa-solid fa-user"></i>
+                    <p>As my skills and experience grow, I make sure to keep your services section up-to-date. 
+                        Add new services as I acquire new skills and remove services that I no longer offer.</p>
+                    <a href="3.html" target="_blank">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Section -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <!-- Stack Overflow Work -->
+                <div class="work">
+                    <img src="stack.svg" alt="Stack Overflow">
+                    <div class="layer">
+                        <a href="https://stackoverflow.com" target="_blank"><i class="fa-solid fa-link"></i></a>
+                        <h3>Website/Resources</h3>
+                        <p>This helps you to get more resources about this.</p>
+                    </div>
+                </div>
+                <!-- Instagram Work -->
+                <div class="work">
+                    <img src="22.jpg" alt="Instagram">
+                    <div class="layer">
+                        <h3>portfolio</h3>
+                        <p>project i am working on.</p>
+                        <a href="5.html" target="_blank"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <!-- GitHub Work -->
+                <div class="work">
+                    <img src="git.png" alt="GitHub">
+                    <div class="layer">
+                        <h3>GitHub</h3>
+                        <p>My GitHub resources.</p>
+                        <a href="https://github.com/Umukundwa004" target="_blank"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <!-- Contact on Left Side -->
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-paper-plane"></i>v.umukundwa@alustudent.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+250 791234567</p>
+                    <!-- Social Icons -->
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href=""><i class="fa-brands fa-square-snapchat"></i></a>
+                    </div>
+                    <br>
+                    <!-- Download CV Button -->
+                    <a href="vestine_umukundwa_resume.pdf" class="btn btn2" download>Download CV</a>
+                    <br>
+                </div>
+                <!-- Contact on Right Side  -->
+                <div class="contact-right">
+                    <form action="">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="button" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript for Tabs -->
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (let tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (let tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <!-- JavaScript for Side Menu  -->
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0"; // Show the menu
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px"; // Hide the menu
+        }
+    </script>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <!-- Copyright Information -->
+                <div class="copyright">
+                    &copy; 2025 Vestine Umukundwa. All rights reserved. This is my portfolio. If you need more, send an email.
+                </div>
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <a href="mailto:mukundwau@gmail.com">mukundwau@gmail.com</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
